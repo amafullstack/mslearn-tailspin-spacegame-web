@@ -32,13 +32,13 @@ steps:
 - script: 'echo "$(Build.DefinitionName) $(Build.BuildId) $(Build.BuildNumber)" > buildinfo.txt ' 
 
 - task: DotNetCoreCLI@2
-  displayname: 'Restore project dependencies'
+  displayName: 'Restore project dependencies'
   inputs: 
    command: 'restore'
    projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
-  displayname: 'Build the project - Release'
+  displayName: 'Build the project - Release'
   inputs:
    command: 'build'
    arguments: '--no-restore --configuration Release'
