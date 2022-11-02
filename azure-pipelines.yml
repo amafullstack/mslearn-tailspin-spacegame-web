@@ -20,7 +20,7 @@ steps:
   displayName: 'Use .Net Core SDK 3.1-300'
   inputs:
    packageType: sdk
-   version: 5.0.0
+   version: 6.0
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
